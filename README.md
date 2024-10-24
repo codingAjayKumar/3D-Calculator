@@ -4,6 +4,15 @@
 
 The **3D Calculator** is a powerful, web-based calculator designed to simplify both basic and advanced mathematical operations. With a clean and intuitive interface, it provides users with a seamless experience for performing calculations, making it ideal for students, professionals, and anyone in need of quick mathematical solutions.
 
+## Image Test on Device
+### Mobile 
+![3D-Calculator Image 1](1.image.png)
+### Tablet
+![3D-Calculator Image 2](2.image.png)
+### Laptop
+![3D-Calculator Image 3](3.image.png)
+
+
 ### Key Features
 
 1. **Basic Arithmetic Operations**:
