@@ -1,32 +1,48 @@
-]<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Advanced 3D Calculator</title>
+    <!-- Link to external CSS for styling the calculator -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Main calculator container for styling and layout -->
     <div class="calculator">
+      <!-- Calculator header -->
       <h1>Calculator</h1>
+
+      <!-- Display for the calculator output, set to readonly to prevent direct editing -->
       <input type="text" id="display" disabled />
+
+      <!-- Container for calculator buttons arranged in a grid layout -->
       <div class="buttons">
+        <!-- Row 1: Basic operations and clear button -->
         <button class="operator" onclick="clearDisplay()">C</button>
         <button class="operator" onclick="appendToDisplay('/')">/</button>
         <button class="operator" onclick="appendToDisplay('*')">*</button>
         <button class="operator" onclick="appendToDisplay('-')">-</button>
+
+        <!-- Row 2: Number buttons (7-9) and addition operator -->
         <button onclick="appendToDisplay('7')">7</button>
         <button onclick="appendToDisplay('8')">8</button>
         <button onclick="appendToDisplay('9')">9</button>
         <button class="operator" onclick="appendToDisplay('+')">+</button>
+
+        <!-- Row 3: Number buttons (4-6) -->
         <button onclick="appendToDisplay('4')">4</button>
         <button onclick="appendToDisplay('5')">5</button>
         <button onclick="appendToDisplay('6')">6</button>
-        <button class="equal" onclick="calculate()">=</button>
+        <button class="equal" onclick="calculate()">=</button> <!-- Equal button for calculating the result -->
+
+        <!-- Row 4: Number buttons (1-3) and 0 button -->
         <button onclick="appendToDisplay('1')">1</button>
         <button onclick="appendToDisplay('2')">2</button>
         <button onclick="appendToDisplay('3')">3</button>
         <button onclick="appendToDisplay('0')">0</button>
+
+        <!-- Row 5: Advanced features like percentage, square root, and memory buttons -->
         <button class="operator" onclick="calculatePercentage()">%</button>
         <button class="operator" onclick="calculateSquareRoot()">√</button>
         <button class="memory" onclick="memoryStore()">M+</button>
@@ -34,11 +50,17 @@
         <button class="memory" onclick="memoryClear()">MC</button>
         <button class="memory" onclick="memorySubtract()">M-</button>
       </div>
+
+      <!-- Calculator history section (if applicable) -->
       <div id="history"></div>
+
+      <!-- Footer for credits -->
       <footer>
         <p>Designed by Ajay Kumar</p>
       </footer>
     </div>
+
+    <!-- Link to external JavaScript for handling calculator functionalities -->
     <script src="script.js"></script>
   </body>
 </html>
